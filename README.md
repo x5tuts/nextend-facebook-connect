@@ -4,12 +4,12 @@ nextend-facebook-connect
 one click social connect for facebook
 
 === Nextend Facebook Connect ===
-Contributors: nextendweb 
+Contributors: nextendweb, x5tuts 
 Tags: facebook, register, login, social connect, social, facebook connect
 Donate link: https://www.facebook.com/nextendweb
 Requires at least: 3.0
-Tested up to: 3.4
-Stable tag: 1.4.59
+Tested up to: 4.0
+Stable tag: 1.4.60
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,9 @@ After you activated the plugin, the plugin will autmatically
 2. Our Social Connect plugins in the profile page for account linking
 
 == Changelog ==
+
+= 1.4.60 =
+* Fixed facebook username
 
 = 1.4.59 =
 * Avatar fix

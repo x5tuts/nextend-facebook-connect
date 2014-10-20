@@ -165,7 +165,7 @@ function new_fb_login_action() {
             require_once (ABSPATH . WPINC . '/registration.php');
             $random_password = wp_generate_password($length = 12, $include_standard_special_chars = false);
             if (!isset($new_fb_settings['fb_user_prefix'])) $new_fb_settings['fb_user_prefix'] = 'facebook-';
-            $sanitized_user_login = sanitize_user($new_fb_settings['fb_user_prefix'] . $user_profile['username']);
+            $sanitized_user_login = sanitize_user($new_fb_settings['fb_user_prefix'] . preg_replace('/[^A-Za-z0-9\-]/', '', strtolower($user_profile['first_name']) . '_'.strtolower($user_profile['last_name']))); 
             if (!validate_username($sanitized_user_login)) {
               $sanitized_user_login = sanitize_user('facebook' . $user_profile['id']);
             }
